@@ -30,7 +30,8 @@
                 <label for=city>Your City</label>
                 <input type=text name=city id=city>
                 <label for=state>Your State</label>
-                <select name="state"> 
+                <input name=state list=state-list>
+                <datalist id=state-list> 
                     <option value="AL">Alabama</option>
                     <option value="AK">Alaska</option>
                     <option value="AZ">Arizona</option>
@@ -80,7 +81,7 @@
                     <option value="WI">Wisconsin</option>
                     <option value="WV">West Virginia</option>
                     <option value="WY">Wyoming</option>
-                </select>
+                </datalist>
             <label for=zip>Your Zip Code</label>
             <input type=text name=zip id=zip>
             </fieldset>
@@ -89,9 +90,9 @@
                 <h3>Choose Your Location</h3>
                 <input type=radio name=location value=Aruba id=aruba>
                 <label for=aruba>Aruba</label>
-                <input type=radio name=location value=Japan id=Japan checked>
+                <input type=radio name=location value=Japan id=Japan>
                 <label for=Japan>Japan</label>
-                <input type=radio name=location value=Reykjavik id=Reykjavik>
+                <input type=radio name=location value=Reykjavik id=Reykjavik checked>
                 <label for=Reykjavik>Reykjavik</label>
                 <input type=radio name=location value="New Zealand" id="New Zealand">
                 <label for="New Zealand">New Zealand</label>
@@ -104,7 +105,7 @@
                 <legend>Choose Your Add-Ons</legend>
                 <input type=checkbox name=extras id=sauna value=sauna>
                 <label for=sauna>Sauna</label>
-                <input type=checkbox name=extras id=hottub value=hottub>
+                <input type=checkbox name=extras id=hottub value=hottub checked>
                 <label for=hottub>Hot-Tub</label>
             </fieldset>
             <!-- TODO: Submit Button -->
